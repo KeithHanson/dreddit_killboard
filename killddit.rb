@@ -16,7 +16,7 @@ class Killddit < Sinatra::Base
   # Routes
 
   get '/' do
-    config.inspect
+    "HAI2U!"
   end
   
 end
