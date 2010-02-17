@@ -6,8 +6,17 @@ class Killddit < Sinatra::Base
   
   set :root, File.dirname(__FILE__)
   set :public, File.dirname(__FILE__) + "/public"
+
   enable :static
   
+  def config
+    @@config ||= YAML.load(File.read("#{Dir.pwd}/config/settings.yml"))
+  end
+
   # Routes
+
+  get '/' do
+    config.inspect
+  end
   
 end

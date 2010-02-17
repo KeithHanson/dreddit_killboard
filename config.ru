@@ -3,7 +3,8 @@ require 'rubygems'
 require 'thread'
 require 'vendor/environment'
 require 'sinatra'
-require 'datamapper'
+require 'dm-core'
+require 'rack-flash'
 require 'erb'
 
 Dir[Pathname(__FILE__).dirname + "models" + "**/*.rb"].each { |file| require file }

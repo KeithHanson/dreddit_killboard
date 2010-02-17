@@ -16,4 +16,8 @@ class KillMail
   def self.print
     "I'm a mail of death"
   end
+
+  def self.import(data)
+    
+  end
 end
